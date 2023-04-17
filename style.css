@@ -99,7 +99,7 @@ footer img:hover{
     background-color: rgb(23, 23, 23);
     color: #f9f901;
 }
-.dark-mode button{
+.dark-mode #gerar{
     background-color: white;
     color: black;
 }
