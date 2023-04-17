@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada online</title>
+    <script>
+        function gerarTabuada() {
+            var numero = parseInt(document.getElementById('numero').value);
+
+            var tabela = document.getElementById('tabela-tabuada');
+
+            tabela.innerHTML = '';
+
+
+            for (var i = 1; i <= 10; i++) {
+                var resultado = numero * i;
+                var linha = '<tr><td><hr>' + numero + ' x ' + i + ' = ' + '<span>' + resultado + '</span>' + '</td> </tr>'
+                tabela.innerHTML += linha
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <header id="head">
+        <h1>TABUADA</h1>
+        <button id="toggle-mode"><img src="icone.png"></button>
+        
+    </header>
+    <hr id="divisa">
+    <div class="recebe">
+        <p>Digite um valor para gerar a sua tabela: </p>
+
+        <input type="text" id="numero"> 
+        <br>
+        <button onclick="gerarTabuada()" id="gerar">Gerar Tabuada</button>
+    </div>
+    <table id="tabela-tabuada"></table>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-mode');
+        const body = document.body;
+        const header = document.getElementById('head');
+        var img = document.querySelector('#myImg');
+        var img2 = document.querySelector('#myImg2');
+
+        toggleBtn.addEventListener('click', function(){
+            body.classList.toggle('dark-mode');
+            header.classList.toggle('dark-mode-header');
+            //isso nao ta funcionando ;-;
+            
+            img.src = 'linkedinB.png';
+            img2.src = 'githubB.png';
+        })
+    </script>
+
+    <footer>&copy; Criado por Andrey Ramos | 
+        <a href="https://www.linkedin.com/in/andrey-ramos-449131270/" id="myImg">
+        <img src="linkedin.png" id="myImg"></a>  
+        <a href="https://github.com/drey009">
+        <img src="github.png" id="myImg2"></a>
+    </footer>
+
+
+
+</body>
+
+</html>

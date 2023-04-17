@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(255, 238, 218);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    
+}
+#divisa{
+    width: 0;
+    height: 78vh;
+    background-color: black;
+}
+p{
+    font-size: 25px;
+}
+input{
+    padding: 12px 28vh;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/* FORMATANDO OS BOTÕES */
+#gerar{
+    background-color: rgba(0, 0, 0, 0.608);
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 10vh;
+}
+#gerar:hover{
+    background-color: rgba(0, 0, 0, 0.608);
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    transform: scale(1.05);
+}
+#toggle-mode{
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+#toggle-mode:active{
+    background-color: transparent;
+    border: none;
+    transform: scale(0.9);
+    
+}
+#toggle-mode img{
+    width: 40px;
+}
+/* FORMATAÇÃO DO QUE O USUÁRIO IRÁ DIGITAR DO LADO ESQUERDO */
+.recebe{
+    position: absolute;
+    left: 5vh;
+    top: 30vh;
+}
+/* FORMATAÇÃO DA TABELA DO LADO DIRETO */
+table{
+    position: absolute;
+    top: 20vh;
+    right: 50vh;
+    font-size: 20px;
+}
+span{
+    color: rgb(206, 0, 0);
+}
+/* FORMATANDO O RODAPÉ */
+footer{
+    display: block;
+    bottom: 0vh;
+    position: fixed;
+}
+footer img{
+    width: 20px;
+}
+footer img:hover{
+    transform: scale(1.06);
+}
+
+
+/* FORMATAÇÃO DO MODO ESCURO */
+.dark-mode-header{
+    color: #fbf0f3;
+    padding: 0 15px 0 15px;
+}
+
+.dark-mode {
+    background-color: rgb(23, 23, 23);
+    color: #f9f901;
+}
+.dark-mode button{
+    background-color: white;
+    color: black;
+}
+.dark-mode #toggle-mode{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
